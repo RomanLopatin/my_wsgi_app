@@ -1,0 +1,2 @@
+Для запуска из командной строки ввести:
+gunicorn run:application

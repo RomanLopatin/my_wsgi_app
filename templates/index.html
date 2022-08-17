@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heroes</title>
+</head>
+<body>
+    <p>Heroes of today ({{data}})</p>
+    <ul>
+        {% for hero in hero_list %}
+            <li>{{hero.name}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
