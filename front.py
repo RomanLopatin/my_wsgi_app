@@ -1,17 +1,18 @@
 from datetime import date
 
-from views import IndexView, HiView, Hello
+from views import IndexView, HiView, Hello, ContactView
 
 routes = {
     '/': IndexView(),
     '/hi/': HiView(),
-    '/hello/': Hello()
+    '/hello/': Hello(),
+    '/contact/': ContactView()
 }
 
 
 # Front controllers
 def data_front(request):
-    request['data'] = date.today()
+    request['data_of_today'] = date.today()
 
 
 def secret_front(request):
