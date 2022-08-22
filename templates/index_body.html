@@ -1,0 +1,8 @@
+<div class="content">
+    <p>Heroes of today ({{data}})</p>
+    <ul>
+        {% for hero in hero_list %}
+            <li>{{hero.name}}</li>
+        {% endfor %}
+    </ul>
+</div>

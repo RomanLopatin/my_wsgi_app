@@ -1,6 +1,4 @@
-from pprint import pprint
 from wsgiref.util import setup_testing_defaults
-
 from my_wsgi_framework.utils import not_found_404_view, get_wsgi_input_data, parse_wsgi_input_data, parse_input_data
 
 

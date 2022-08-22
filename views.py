@@ -34,7 +34,7 @@ class ContactView:
             print(f'Email: {email}')
             print(f'Title: {title}')
             print(f'Text: \n {text}')
-            return '200 OK', '<h1>Thank you!</h1>'
+            return '200 OK', render('Thanks.html')
         else:
             print(request['request_params'])
             return '200 OK', render('contact.html')

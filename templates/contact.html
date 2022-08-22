@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Контакты</title>
-</head>
-<body>
-  <H1>Напишите нам!</H1>
-  <form method="post">
-      <input type="text" name="title" placeholder="Заголовок">
-      <input type="text" name="text" placeholder="Текст сообщения">
-      <input type="email" name="email" placeholder="email">
-      <button type="submit">Отправить</button>
+﻿{% extends "base.html" %}
+{% block title %}
+Контакты
+{% endblock %}
+{% block style %}
+	{% include "inc-style.html" %}
+{% endblock %}
+{% block menu %}
+	{% include "inc-menu.html" %}
+{% endblock %}
+{% block body %}
+	{% include "contact_body.html" %}
+{% endblock %}
 
-  </form>
-</body>
-</html>
