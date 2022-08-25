@@ -1,11 +1,13 @@
 from datetime import date
 
-from views import IndexView, HiView, Hello, ContactView
+from views import IndexView, CategoryCreate, CategoryListView, ContactView, CourseCreate, CourseListView
 
 routes = {
     '/': IndexView(),
-    '/hi/': HiView(),
-    '/hello/': Hello(),
+    '/category-create/': CategoryCreate(),
+    '/category-list/': CategoryListView(),
+    '/course-create/': CourseCreate(),
+    '/course-list/': CourseListView(),
     '/contact/': ContactView()
 }
 

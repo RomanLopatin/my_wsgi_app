@@ -1,0 +1,14 @@
+<div class="content">
+    <div>
+		<a href="/category-create/">Создать новую категорию</a>
+	</div>
+    <p>Список категорий:</p>
+    <ul>
+        {% for category in category_list %}
+            <li>
+                {{category.id}} {{category.name}}
+                <a href="/course-list/?id={{category.id}}"> Показать курсы категории </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
